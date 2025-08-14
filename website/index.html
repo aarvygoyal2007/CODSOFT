@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EnjoyBliss Café</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #fefaf6;
+        color: #4b3832;
+    }
+    header {
+        background: url('images/ambient-corner.jpg') no-repeat center center/cover;
+        text-align: center;
+        padding: 100px 20px;
+        color: #d9b382; /* warm caramel tone */
+    }
+    header h1 {
+        font-family: 'Georgia', serif;
+        font-size: 3em;
+    }
+    header p {
+        font-size: 1.3em;
+        font-style: italic;
+        color: white;
+    }
+    nav {
+        background-color: #d9b382;
+        padding: 10px;
+        text-align: center;
+    }
+    nav a {
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+    section {
+        padding: 50px 20px;
+        max-width: 1100px;
+        margin: auto;
+    }
+    h2 {
+        color: #6b4f4f;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .menu-category {
+        margin-bottom: 30px;
+    }
+    .menu-item {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #ddd;
+        padding: 8px 0;
+    }
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .gallery img {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+    .reviews, .offers {
+        background-color: #f9ede1;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .review-item {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #e1c6a8;
+        padding-bottom: 10px;
+    }
+    .offer-item {
+        margin-bottom: 15px;
+    }
+    form input, form textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    form button {
+        background-color: #d9b382;
+        border: none;
+        padding: 10px 20px;
+        color: white;
+        font-size: 1em;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    footer {
+        background-color: #d9b382;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>EnjoyBliss Café</h1>
+    <p>Where Every Sip Feels Like a Hug</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#offers">Offers</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#booking">Book</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>Welcome to EnjoyBliss Café, nestled in the cozy lanes of Jaipur, Rajasthan. We believe coffee is more than a drink – it’s an emotion. Our warm pastel interiors and freshly baked aroma make this the perfect place to relax, laugh, and create memories. Whether you crave Italian thin-crust pizza, authentic Indian platters, or refreshing beverages, our menu is crafted with love for every palate.</p>
+</section>
+
+<section id="menu">
+    <h2>Our Menu</h2>
+    <!-- Italian Cuisine -->
+    <div class="menu-category">
+        <h3>Italian</h3>
+        <div class="menu-item"><span>Thin Crust Pizza</span><span>₹600</span></div>
+        <div class="menu-item"><span>Margherita Pizza</span><span>₹550</span></div>
+        <div class="menu-item"><span>Four Cheese Pizza</span><span>₹700</span></div>
+        <div class="menu-item"><span>Pepperoni Pizza</span><span>₹750</span></div>
+        <div class="menu-item"><span>Pasta Alfredo</span><span>₹450</span></div>
+        <div class="menu-item"><span>Pasta Arrabbiata</span><span>₹400</span></div>
+        <div class="menu-item"><span>Lasagna</span><span>₹500</span></div>
+        <div class="menu-item"><span>Garlic Bread</span><span>₹200</span></div>
+        <div class="menu-item"><span>Bruschetta</span><span>₹250</span></div>
+    </div>
+
+    <!-- Indian Cuisine -->
+    <div class="menu-category">
+        <h3>Indian</h3>
+        <div class="menu-item"><span>Paneer Tikka Platter</span><span>₹450</span></div>
+        <div class="menu-item"><span>Chole Bhature</span><span>₹300</span></div>
+        <div class="menu-item"><span>Veg Biryani</span><span>₹350</span></div>
+        <div class="menu-item"><span>Dal Makhani with Naan</span><span>₹400</span></div>
+        <div class="menu-item"><span>Masala Dosa</span><span>₹250</span></div>
+        <div class="menu-item"><span>Rajma Chawal</span><span>₹300</span></div>
+        <div class="menu-item"><span>Veg Thali</span><span>₹500</span></div>
+    </div>
+
+    <!-- Beverages -->
+    <div class="menu-category">
+        <h3>Beverages</h3>
+        <div class="menu-item"><span>Cappuccino</span><span>₹200</span></div>
+        <div class="menu-item"><span>Latte</span><span>₹220</span></div>
+        <div class="menu-item"><span>Espresso</span><span>₹180</span></div>
+        <div class="menu-item"><span>Matcha Latte</span><span>₹250</span></div>
+        <div class="menu-item"><span>Iced Americano</span><span>₹200</span></div>
+        <div class="menu-item"><span>Hot Chocolate</span><span>₹220</span></div>
+        <div class="menu-item"><span>Herbal Tea</span><span>₹150</span></div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+        <img src="images/italian thin crust pizza.jpg" alt="Thin Crust Pizza">
+        <img src="images/matcha-latte.jpg" alt="Matcha Latte">
+        <img src="images/desserts.jpg" alt="Desserts">
+        <img src="images/latte-art.jpg" alt="Latte Art">
+        <img src="images/brunch-table.jpg" alt="Brunch Table">
+    </div>
+</section>
+
+<section id="offers" class="offers">
+    <h2>Special Offers</h2>
+    <div class="offer-item"><strong>Buy 1 Get 1 Free</strong> on Cappuccino every Monday.</div>
+    <div class="offer-item"><strong>Flat 20% Off</strong> on all pizzas every Wednesday.</div>
+    <div class="offer-item"><strong>Student Discount</strong>: 15% off with valid ID.</div>
+</section>
+
+<section id="reviews" class="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review-item"><strong>Riya Sharma</strong>: “The ambience is cozy, the coffee is divine, and the pizzas taste like Italy!”</div>
+    <div class="review-item"><strong>Arjun Mehta</strong>: “Loved the Paneer Tikka Platter! Highly recommend their matcha latte.”</div>
+    <div class="review-item"><strong>Simran Kaur</strong>: “Friendly staff, quick service, and mouthwatering desserts.”</div>
+</section>
+
+<section id="booking">
+    <h2>Book a Table</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="tel" placeholder="Phone" required>
+        <textarea placeholder="Special Requests"></textarea>
+        <button type="submit">Reserve Now</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@enjoyblisscafe.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Address: C-21, Cozy Lane, Jaipur, Rajasthan</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 EnjoyBliss Café. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
